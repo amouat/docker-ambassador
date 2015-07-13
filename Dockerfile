@@ -1,4 +1,6 @@
-FROM alpine
+FROM alpine:latest
+
+MAINTAINER Adrian Mouat adrian@adrianmouat.com
 
 RUN apk --update add socat
 CMD env | grep _TCP= | \ 
